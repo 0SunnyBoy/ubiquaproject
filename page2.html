@@ -3,84 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find-in-Belém</title> 
-    <link rel="stylesheet" href="General.css">
+    <meta name="description" content="Discover the top destinations in Belém, including historical sites and cultural landmarks.">
+    <title>Destinations - Find-in-Belém</title> 
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Img/unama.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="logo">Find-in-Belém</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page2.html">Destinations</a></li>
-                <li><a href="page3.html">Hotels</a></li>
-                <li><a href="page4.html">Restaurants</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="firstdestinations">
-        <h1>Destinations in Belém</h1>
-        <p>Some recommendations for destinations in Belém</p>
-        </section>
-        <section class="DestG">
-        <div class="imgblock">
-            <h2 class="tittlep">Basílica de Nossa Senhora de Nazaré</h2>
-            <img src="Img/basilica.jpg" alt="Basílica Nossa senhora de nazaré" loading="lazy">
-            <p>The Basilica of Our Lady of Nazareth of Exile is a minor basilica of the Catholic Church located in the city of Belém. Its construction started in 1909 at the place where the image of the Virgin of Nazareth was found by Plácido José de Souza in the state of Pará, on the banks of the Murututu Igarapé.</p>
-            <p class="intp">
-                Address: Av. Nª Sra. de Nazaré, 1300 - Nazaré.
-                <br>
-                <a href="https://maps.app.goo.gl/tGxUYqkWJJPDaank9">Google Maps Link</a>
-            </p>
+<header role="banner">
+    <div class="logo">Find-in-Belém</div>
+<button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav role="navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html" aria-label="Home">Home</a></li>
+            <li><a href="page2.html" aria-current="page" aria-label="Destinations">Destinations</a></li>
+            <li><a href="page3.html" aria-label="Hotels">Hotels</a></li>
+            <li><a href="page4.html" aria-label="Restaurants">Restaurants</a></li>
+        </ul>
+    </nav>
+</header>
+<main role="main">
+    <section class="highlight">
+        <h1 class="section-title">Top Destinations in Belém</h1>
+        <p class="section-description">Explore the most famous landmarks in Belém.</p>
+    </section>
+    <section class="categories">
+        <div class="category-card">
+            <h2>Basílica de Nazaré</h2>
+            <img src="Img/basilica.jpg" alt="Basílica de Nazaré" srcset="Img/basilica.jpg 300w, Img/basilica-large.jpg 600w" sizes="(max-width: 600px) 300px, 600px">
+            <p>Historical Catholic basilica located in the Nazaré district.</p>
+            <a class="btn" href="https://maps.app.goo.gl/tGxUYqkWJJPDaank9">Map</a>
         </div>
-        <div class="imgblock">
-            <h3 class="tittlep">Mercado Ver-o-Peso</h3>
-            <img src="Img/veropeso.jpg" alt="Ver o peso" loading="lazy">
-            <p>The Ver-o-Peso Market, Mercado Municipal Bolonha de Peixe, Mercado de Ferro, or Ver-o-Peso is a street market and fair, and small port area inaugurated in 1901 that is part of the Ver-o-Peso Complex.
-            </p>
-            <p class="intp">
-                Address: Blvd. Castilhos França - Campina.
-                <br>
-                <a href="https://maps.app.goo.gl/JMvcwck7M3MoxHYE9">Google Maps Link</a>
-            </p>
+        <div class="category-card">
+            <h2>Ver-o-Peso Market</h2>
+            <img src="Img/veropeso.jpg" alt="Mercado do Ver-o-Peso" srcset="Img/veropeso.jpg 300w, Img/veropeso-large.jpg 600w" sizes="(max-width: 600px) 300px, 600px">
+            <p>Traditional Amazonian market with regional food and crafts.</p>
+            <a class="btn" href="https://maps.app.goo.gl/JMvcwck7M3MoxHYE9">Map</a>
         </div>
-        <div class="imgblock">
-            <h4 class="tittlep">Praça da República</h4>
-            <img src="Img/pracarepublica.jpg" alt="Praça da republica" loading="lazy">
-            <p>Leafy space with a monument to a coup of 1889, ornate colonial-era buildings & a Sunday craft fair.</p>
-            <p class="intp">
-                Address: Av. Pres. Vargas, 814 - Campina.
-                <br>
-                <a href="https://maps.app.goo.gl/ML6uZXhevk5BcWdb9">Google Maps Link</a>
-            </p>
+        <div class="category-card">
+            <h2>Casa das Onze Janelas</h2>
+            <img src="Img/onzejanelas.jpg" alt="Casa das Onze Janelas" srcset="Img/onzejanelas.jpg 300w, Img/onzejanelas-large.jpg 600w" sizes="(max-width: 600px) 300px, 600px">
+            <p>Historic house turned into an art museum and cultural space.</p>
+            <a class="btn" href="https://maps.app.goo.gl/LFsda6VMFZHKJnPC8">Map</a>
         </div>
-        <div class="imgblock">
-            <h5 class="tittlep">Forte do Presépio</h5>
-            <img src="Img/fortepresepio.jpg" alt="Forte do presepio" loading="lazy">
-            <p>It was built in 1616 by Francisco Caldeira Castelo Branco at Maúri Point, a promontory on the right bank of the mouth of the Guamá River and Guajará Bay. The first chapel in Belém was located in the fort, now housing a museum on native indigenous culture.</p>
-            <p class="intp">
-                Address: Praça Dom Frei Caetano Brandão, Cidade Velha.
-                <br>
-                <a href="https://maps.app.goo.gl/tVXcDepNWUBtZqmF9">Google Maps Link</a>
-            </p>
-        </div>
-        <div class="imgblock">
-            <h6 class="tittlep">Espaço Cultural Casa das Onze Janelas</h6>
-            <img src="Img/onzejanelas.jpg" alt="Casa das onze janelas" loading="lazy">
-            <p>The House of Eleven Windows, located in Belém, is a historic building that has served various purposes since its construction in the 18th century. Originally a private residence, it later became a military hospital, barracks, and a detention center during Brazil’s military dictatorship. Today, it is a cultural space and museum dedicated to modern and contemporary art, symbolizing the transformation of history through art and memory.
-            </p>
-            <p class="intp">
-                Address: R. Siqueira Mendes - Cidade Velha.
-                <br>
-                <a href="https://maps.app.goo.gl/LFsda6VMFZHKJnPC8">Google Maps Link</a>
-            </p>
-        </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Unama. Todos os direitos reservados.</p>
-    </footer>
+    </section>
+</main>
+<footer role="contentinfo">
+    <p>&copy; 2025 Unama. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
