@@ -3,94 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find-in-Belém</title> 
-    <link rel="stylesheet" href="General.css">
+    <meta name="description" content="Taste the best local flavors at the top restaurants in Belém.">
+    <title>Restaurants - Find-in-Belém</title> 
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Img/unama.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="logo">Find-in-Belém</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page2.html">Destinations</a></li>
-                <li><a href="page3.html">Hotels</a></li>
-                <li><a href="page4.html">Restaurants</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="tittle">
-        <h1>Restaurants in Belém</h1>
-        <p>Some recommendations for restaurants in Belém</p>
-        </section>
-            <section class="DestG">
-            <div class="imgblock">
-                <h2 class="tittlep">Restaurante Ver O Açaí</h2>
-                <img src="Img/rveroacai.jpg" alt="Restaurante Ver o açai" loading="lazy">
-                <p>Cheerful eatery offering classic Paraense cuisine in a colorfully decorated dining area</p>
-                <p class="intp">
-                    Address: Tv. Dom Pedro I, 599 - Umarizal.
-                    <br>
-                    Contact number: (91) 98431-0601
-                    <br>
-                    <a href="http://veroacai.com.br/lp">Site Próprio</a>
-                    <br>
-                    <a href="https://maps.app.goo.gl/CykGpD91TGpDkeHD9">Google Maps Link</a>
-                </p>
-            </div>
-            <div class="imgblock">
-                <h3 class="tittlep">Restaurante Point do Açaí</h3>
-                <img src="Img/rpointdoacai.jpg" alt="Restaurante Point do açai" loading="lazy">
-                <p>An unforgettable experience of traditional Pará cuisine</p>
-                <p class="intp">
-                    Address: R. Veiga Cabral, 450 - Cidade Velha.
-                    <br>
-                    Contact number: (91) 3230-3162
-                    <br>
-                    <a href="https://maps.app.goo.gl/HgQsnr3yv1r1Hc2L7">Google Maps Link</a>
-                </p>
-            </div>
-            <div class="imgblock">
-                <h4 class="tittlep">Manjar das Garças</h4>
-                <img src="Img/rmanjargarca.jpg" alt="Restaurante Manjar das garças" loading="lazy">
-                <p>A restaurant that is situated in a picturesque setting with birds, butterflies, iguanas, herons, a stunning aerial view of Belém and the Amazon</p>
-                <p class="intp">
-                    Address: R. Dr. Assis, s/n - Cidade Velha, located in: Mangal das Garças
-                    <br>
-                    Contact number: (91) 3242-1056
-                    <br>
-                    <a href="https://maps.app.goo.gl/9LHSSHhRjSNQ6gwM7">Google Maps Link</a>
-                </p>
-            </div>
-            <div class="imgblock">
-                <h5 class="tittlep">Santa Grelha Belém</h5>
-                <img src="Img/rsantagrelha.jpg" alt="Restaurante Santa grelha" loading="lazy">
-                <p>National and international cuisine, specializing in premium grilled meats. The restaurant will delight lovers of good meat.</p>
-                <p class="intp">
-                    Address: Av. Centenário, 1052 - Val-de-Cans.
-                    <br>
-                    Contact number: (91) 2121-1485
-                    <br>
-                    <a href="https://maps.app.goo.gl/gc1f7UMTt6UnoHKY9">Google Maps Link</a>
-                </p>
-            </div>
-            <div class="imgblock">
-                <h6 class="tittlep">Casa Do Saulo Das Onze Janelas</h6>
-                <img src="Img/rsaulo.jpg" alt="Restaurante Saulo casa das onze janelas" loading="lazy">
-                <p>A gastronomic experience located at Casa das Onze Janelas, a perfect blend of traditional flavors with innovative touches</p>
-                <p class="intp">
-                    Address: R. Siqueira Mendes, S/N - Cidade Velha.
-                    <br>
-                    Contact number: (91) 99338-4511
-                    <br>
-                    <a href="#">Google Maps Link</a>
-                </p>
-            </div>
-            </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Unama. Todos os direitos reservados.</p>
-    </footer>
+<header role="banner">
+    <div class="logo">Find-in-Belém</div>
+<button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav role="navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html" aria-label="Home">Home</a></li>
+            <li><a href="page2.html" aria-label="Destinations">Destinations</a></li>
+            <li><a href="page3.html" aria-label="Hotels">Hotels</a></li>
+            <li><a href="page4.html" aria-current="page" aria-label="Restaurants">Restaurants</a></li>
+        </ul>
+    </nav>
+</header>
+<main role="main">
+    <section class="highlight">
+        <h1 class="section-title">Best Restaurants in Belém</h1>
+        <p class="section-description">Taste the local flavors of the Amazon.</p>
+    </section>
+    <section class="categories">
+        <div class="category-card">
+            <h2>Ver O Açaí</h2>
+            <img src="Img/rveroacai.jpg" alt="Ver o Açaí" srcset="Img/rveroacai.jpg 300w, Img/rveroacai-large.jpg 600w" sizes="(max-width: 600px) 300px, 600px">
+            <p>Traditional dishes in a colorful Amazonian setting.</p>
+            <a class="btn" href="https://maps.app.goo.gl/CykGpD91TGpDkeHD9">Map</a>
+        </div>
+        <div class="category-card">
+            <h2>Point do Açaí</h2>
+            <img src="Img/rpointdoacai.jpg" alt="Point do Açaí" srcset="Img/rpointdoacai.jpg 300w, Img/rpointdoacai-large.jpg 600w" sizes="(max-width: 600px) 300px, 600px">
+            <p>Authentic regional flavors with vibrant ambience.</p>
+            <a class="btn" href="https://maps.app.goo.gl/HgQsnr3yv1r1Hc2L7">Map</a>
+        </div>
+        <div class="category-card">
+            <h2>Santa Grelha</h2>
+            <img src="Img/rsantagrelha.jpg" alt="Santa Grelha" srcset="Img/rsantagrelha.jpg 300w, Img/rsantagrelha-large.jpg 600w" sizes="(max-width: 600px) 300px, 600px">
+            <p>Grilled meat and international cuisine.</p>
+            <a class="btn" href="https://maps.app.goo.gl/gc1f7UMTt6UnoHKY9">Map</a>
+        </div>
+    </section>
+</main>
+<footer role="contentinfo">
+    <p>&copy; 2025 Unama. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
