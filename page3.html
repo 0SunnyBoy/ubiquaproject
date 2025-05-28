@@ -3,103 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find-in-Belém</title> 
-    <link rel="stylesheet" href="General.css">
+    <meta name="description" content="Find the best hotels in Belém for a comfortable stay.">
+    <title>Hotels - Find-in-Belém</title> 
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Img/unama.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="logo">Find-in-Belém</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page2.html">Destinations</a></li>
-                <li><a href="page3.html">Hotels</a></li>
-                <li><a href="page4.html">Restaurants</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="tittle">
-        <h1>Hotels in Belém</h1>
-        <p>Some recommendations for hotels in Belém</p>
-        </section>
-            <section class="DestG">
-            <div class="imgblock">
-                <h2 class="tittlep">Ibis Styles Belém Batista Campos</h2>
-                <img src="Img/ibisbatistacampos.jpg" alt="Hotel Ibis batista campos" loading="lazy">
-                <p>Set 3 km from bustling Ver-o-peso market, this straightforward hotel is 2 km both from the 17th-century Forte do Presépio and from the Emílio Goeldi Museum.</p>
-                <p class="intp">
-                    Address: R. Pres. Pernambuco, 116 - Batista Campos.
-                    <br>
-                    Contact number: (91) 3342-2121
-                    <br>
-                    <a href="https://all.accor.com/hotel/B1Z6/index.pt-br.shtml">Site Próprio</a>
-                    <br>
-                    <a href="https://maps.app.goo.gl/oA55o2TAY5AzVkv78">Google Maps Link</a>
-                </p>
-            </div>
-            <div class="imgblock">
-                <h3 class="tittlep">Mercure Belém Boulevard</h3>
-                <img src="Img/mercure.jpeg" alt="Hotel Mercure" loading="lazy">
-                <p>Set in a modern high-rise in the city's central shopping district, this upscale hotel is an 8-minute walk from the Museu Cultural - UFPA and a 12-minute walk from the ornate Basílica Nossa Senhora de Nazaré.</p>
-                <p class="intp">
-                    Address: Tv. Dom Romualdo de Seixas, 1560 - Umarizal.
-                    <br>
-                    Contact number: (91) 3366-7575
-                    <br>
-                    <a href="https://all.accor.com/lien_externe.svlt?goto=fiche_hotel&code_hotel=B203&merchantid=seo-maps-BR-B203&sourceid=aw-cen&utm_medium=seo%20maps&utm_source=google%20Maps&utm_campaign=seo%20maps
-                    ">Site Próprio</a>
-                    <br>
-                    <a href="https://maps.app.goo.gl/1NyPrJp3HeVbin5w8">Google Maps Link</a>
-                </p>
-            </div>
-            <div class="imgblock">
-                <h4 class="tittlep">Bristol Umarizal Belém Hotel</h4>
-                <img src="Img/bristol.jpg" alt="Hotel Bristol" loading="lazy">
-                <p>In a building with a glass facade, this casual hotel is 2 km from the Guajará Bay coast, 3 km from the Ver-o-peso market and 7 km from the Belém–Val-de-Cans–Júlio Cezar Ribeiro International Airport.</p>
-                <p class="intp">
-                    Address: Tv. Dom Pedro I, 1104 - Umarizal.
-                    <br>
-                    Contact number: (91) 3349-6326
-                    <br>
-                    <a href="https://www.bristolhoteis.com.br/hotel-umarizal-belem/">Site Próprio</a>
-                    <br>
-                    <a href="https://maps.app.goo.gl/wwya6TUKvFYnQy5t6">Google Maps Link</a>
-                </p>
-            </div>
-            <div class="imgblock">
-                <h5 class="tittlep">Radisson Hotel Maiorana Belém</h5>
-                <img src="Img/radissonhotel.jpeg" alt="Hotel Radisson" loading="lazy">
-                <p>This modern, glass-fronted hotel is set 1.6 km from the Museu Paraense Emílio Goeldi research institution and 10 km from Val de Cans International Airport.</p>
-                <p class="intp">
-                    Address: Av. Cmte. Brás de Aguiar, 301-321 - Nazaré.
-                    <br>
-                    Contact number: (91) 3182-8797
-                    <br>
-                    <a href="https://www.letsatlantica.com.br/hotel/radisson-hotel-belem?utm_source=gmb&utm_medium=organic&utm_campaign=gmb-rbel-cta-profile">Site Próprio</a>
-                    <br>
-                    <a href="https://maps.app.goo.gl/QNhuXpsikwymGTbCA">Google Maps Link</a>
-                </p>
-            </div>
-            <div class="imgblock">
-                <h6 class="tittlep">Hotel Princesa Louçã</h6>
-                <img src="Img/princesal.jpg" alt="Hotel princesa louçã" loading="lazy">
-                <p>Offering views of Guajará Bay, this laid-back hotel set among shops and restaurants is a 16-minute walk from Ver-o-Peso, an open-air market, and 9 km from Aeroporto Internacional de Belém.</p>
-                <p class="intp">
-                    Address: Av. Pres. Vargas, 882 - Campina.
-                    <br>
-                    Contact number: (91) 4006-7000
-                    <br>
-                    <a href="https://www.princesabelem.com.br/">Site Próprio</a>
-                    <br>
-                    <a href="https://maps.app.goo.gl/ZDYMqePKRdLNq8Jz8">Google Maps Link</a>
-                </p>
-            </div>
-            </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Unama. Todos os direitos reservados.</p>
-    </footer>
+<header role="banner">
+    <div class="logo">Find-in-Belém</div>
+<button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav role="navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html" aria-label="Home">Home</a></li>
+            <li><a href="page2.html" aria-label="Destinations">Destinations</a></li>
+            <li><a href="page3.html" aria-current="page" aria-label="Hotels">Hotels</a></li>
+            <li><a href="page4.html" aria-label="Restaurants">Restaurants</a></li>
+        </ul>
+    </nav>
+</header>
+<main role="main">
+    <section class="highlight">
+        <h1 class="section-title">Recommended Hotels in Belém</h1>
+        <p class="section-description">A selection of hotels for a comfortable stay.</p>
+    </section>
+    <section class="categories">
+        <div class="category-card">
+            <h2>Radisson Hotel</h2>
+            <img src="Img/radissonhotel.jpeg" alt="Radisson Hotel" srcset="Img/radissonhotel.jpeg 300w, Img/radissonhotel-large.jpeg 600w" sizes="(max-width: 600px) 300px, 600px">
+            <p>Modern hotel near key attractions and airport access.</p>
+            <a class="btn" href="https://maps.app.goo.gl/QNhuXpsikwymGTbCA">Map</a>
+        </div>
+        <div class="category-card">
+            <h2>Hotel Princesa Louçã</h2>
+            <img src="Img/princesal.jpg" alt="Hotel Princesa Louçã" srcset="Img/princesal.jpg 300w, Img/princesal-large.jpg 600w" sizes="(max-width: 600px) 300px, 600px">
+            <p>Classic hotel with views over Guajará Bay.</p>
+            <a class="btn" href="https://maps.app.goo.gl/ZDYMqePKRdLNq8Jz8">Map</a>
+        </div>
+        <div class="category-card">
+            <h2>Bristol Umarizal</h2>
+            <img src="Img/bristol.jpg" alt="Bristol Hotel" srcset="Img/bristol.jpg 300w, Img/bristol-large.jpg 600w" sizes="(max-width: 600px) 300px, 600px">
+            <p>Comfortable hotel close to shopping and downtown.</p>
+            <a class="btn" href="https://maps.app.goo.gl/wwya6TUKvFYnQy5t6">Map</a>
+        </div>
+    </section>
+</main>
+<footer role="contentinfo">
+    <p>&copy; 2025 Unama. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
