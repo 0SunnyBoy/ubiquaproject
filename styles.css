@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #ff2018;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d1e7dd;
+}
+
+main {
+    padding: 20px;
+}
+
+.highlight, .categories {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-card {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff2018;
+    color: white;
+    text-decoration: none;
+}
+
+a:focus, button:focus {
+    outline: 3px dashed #ff2018;
+    outline-offset: 4px;
+}
+
+.btn {
+    background-color: #ff2018;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #cc1a13;
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 10px;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.8em;
+        cursor: pointer;
+        margin-left: auto;
+    }
+}
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    nav ul {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
